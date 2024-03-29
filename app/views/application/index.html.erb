@@ -1,0 +1,59 @@
+<head>
+  <style>
+      body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    }
+
+    .container {
+        text-align: center;
+        margin-top: 10vh; /* Centrar verticalmente */
+        padding:80px; 
+        position: relative;
+    }
+
+    .title {
+        font-size: 3em; /* Tamaño del título */
+        font-weight: bold;
+        color: #333; /* Color del texto */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+        margin-bottom: 20px; /* Espacio inferior */
+        position:relative;
+        left: 200%;
+    }
+
+    .subtitle {
+        font-size: 1.5em; /* Tamaño del subtítulo */
+        color: rgba(0, 0, 0, 0.5); /* Color del texto difuminado */
+        margin-top: 5px; /* Margen superior */
+        position:relative;
+        left: 200%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        padding: 40px; /* Reducir el padding para dispositivos más pequeños */
+      }
+
+      .title {
+        font-size: 2em; /* Reducir el tamaño del título */
+        left: 0; /* Centrar el título */
+      }
+
+      .subtitle {
+        font-size: 1.2em; /* Reducir el tamaño del subtítulo */
+        left: 0; /* Centrar el subtítulo */
+      }
+    }
+  </style>
+</head>    
+    
+<body>
+    <div class="container">
+        <h1 class="title">Main Page</h1>
+        <h2 class="subtitle">Subtittle</h2>
+    </div>
+  
+</body>

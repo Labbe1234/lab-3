@@ -1,0 +1,72 @@
+<head>
+  <style>
+      body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 10vh; /* Centrar verticalmente */
+            padding: 80px; 
+            position: relative;
+        }
+
+        .title, .subtitle {
+            font-size: 3em; /* Tamaño del título */
+            font-weight: bold;
+            color: #333; /* Color del texto */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+            margin-bottom: 20px; /* Espacio inferior */
+            position: relative;
+            left: 35%;
+        }
+
+        .subtitle {
+            font-size: 1.5em; /* Tamaño del subtítulo */
+            color: rgba(0, 0, 0, 0.5); /* Color del texto difuminado */
+            margin-top: 5px; /* Margen superior */
+        }
+
+        .text-box {
+            border: 2px solid #333;
+            padding: 20px;
+            margin-top: 50px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            left: 30%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            .title, .subtitle {
+                font-size: 2em;
+                left: 0%;
+            }
+
+            .text-box {
+                left: 0%;
+            }
+        }
+  </style>
+</head>    
+    
+<body>
+    <div class="container">
+        <h1 class="title">Main Page</h1>
+        <h2 class="subtitle">Subtittle</h2>
+    </div>
+    <div class="text-box">
+        <p>
+            The "Y" website is on its way to dethrone Twitter. Designed during WEB classes by Tomás Labbé Díaz, this platform is poised to revolutionize social media as we know it.
+        </p>
+    </div>
+  
+</body>

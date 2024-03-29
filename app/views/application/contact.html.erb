@@ -1,0 +1,99 @@
+<head>
+    <style>
+        /* Estilos para el formulario de contacto */
+        .contact-form {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .contact-form label {
+            width: calc(50% - 10px);
+            font-weight: bold;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: calc(50% - 10px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+        }
+
+        .contact-form button[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+
+<body>
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="contact-form">
+                        <h1>Contact</h1>
+                        <form action="/Send-mesagge" method="POST" class="contact-form">
+                            <label for="Name">Name:</label><br>
+                            <input type="text" id="Name" name="Name" required><br><br>
+
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required><br><br>
+
+                            <label for="message">Mesagge:</label><br>
+                            <textarea id="mesagge" name="mesagge" rows="4" required></textarea><br><br>
+
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function ShowAlert() {
+            alert("Thank you for your message, we will contact you soon.");
+            window.location.href = "/Contact";
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            var form = document.querySelector('.contact-form form');
+            form.addEventListener('submit', function(event) {   
+                ShowAlert();
+                event.preventDefault();
+            });
+        });
+    </script>
+</body>
